@@ -121,3 +121,13 @@ Sum: 11.0
 Subtract: 1.0
 Multiply: 30.0
 Divide: 1.2
+
+for part 2
+sara@DESKTOP-VDHI02P:~/Training-labs/Docker/Lab3$ docker run -it --name container2 app2
+Enter first number: 30
+Enter second number: 20
+a = 30.0, b = 20.0
+Sum: 50.0
+Subtract: 10.0
+Multiply: 600.0
+Divide: 1.5
