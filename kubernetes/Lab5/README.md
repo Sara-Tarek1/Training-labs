@@ -89,3 +89,10 @@ Open the generated `ivolve-report-v2.html` file in a browser to review the scan 
 
 ## Result
 The application runs successfully, and the final image scan reported no detected HIGH or CRITICAL vulnerabilities. This result applies to the selected severity levels and scan performed; it does not mean that every possible vulnerability is absent.
+
+alpine
+No Vulnerabilities found
+No Misconfigurations found
+node-pkg
+No Vulnerabilities found
+No Misconfigurations found
