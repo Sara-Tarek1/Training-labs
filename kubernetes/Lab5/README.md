@@ -25,7 +25,9 @@ docker build --no-cache -t ivolve-app:v2 .
 ```bash
 docker run -d --name ivolve-test -p 3000:3000 ivolve-app:v2
 ```
-
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
 ## Test the Application
 
 Test the main endpoint:
