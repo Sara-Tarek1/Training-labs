@@ -533,5 +533,7 @@ This lab demonstrated how to build Docker images, run containers with different 
 - Python 3.12
 - Flask 3.1.2
 - Linux / WSL Ubuntu
-- Git and GitHub
+- Git and GitHubsara@DESKTOP-VDHI02P:~/Training-labs/kubernetes/Lab6$ curl http://localhost:5002
+{"application":"iVolveApp3","environment":"dev","message":"Welcome to the Docker Env & Resource Management Lab!"}
+- 
 
