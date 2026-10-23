@@ -25,6 +25,13 @@ Deploy a Node.js web application and a MySQL database using Docker Compose. Conf
 - `Dockerfile` — builds the Node.js application image.
 - `docker-compose.yml` — defines the app and database services, networking, environment variables, and volumes.
 - `server.js` — application server and health/readiness endpoints.
+
+
+sara@DESKTOP-VDHI02P:~/Training-labs/Jenkins/Lab8$ curl http://localhost:3000/health
+🚀 iVolve web app is working! Keep calm and code on! 🎉sara@DESKTOP-VDHI02P:~/Training-labs/Jenkins/Lab8$ curl http://localhost:3000/ready
+👍 iVolve web app is ready to rock and roll! 🤘sara@DESKTOP-VDHI02P:~/Training-labs/Jenkins/Lab8$
+
+
 - `db.js` — database initialization logic.
 - `package.json` — Node.js dependencies.
 - `frontend/` — frontend application files.
