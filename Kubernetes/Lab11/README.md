@@ -127,3 +127,6 @@ Kubernetes rejected the fourth Pod because the namespace had already reached its
 
 The ResourceQuota was successfully applied to the `ivolve` namespace. Kubernetes allowed three Pods and rejected the fourth, confirming that the quota enforcement works correctly.
 
+sara@DESKTOP-VDHI02P:~/Training-labs/Kubernetes/Lab11$ kubectl run quota-pod-4 --image=nginx --restart=Never -n ivolve
+Error from server (Forbidden): pods "quota-pod-4" is forbidden: exceeded quota: ivolvequota, requested: pods=1, used: pods=3, limited: pods=3
+
