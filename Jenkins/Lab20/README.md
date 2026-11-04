@@ -35,7 +35,7 @@ Wait until the installation process finishes successfully, then restart Jenkins 
 
 **Result:** Both plugins were installed successfully, and Jenkins loaded the extensions after restarting.
 
-![Jenkins Plugin Manager](screenshots/Screenshot%20(4447).png)
+![Jenkins Plugin Manager](screenshots/installed-plugins.png)
 
 ## Step 3: Enable Role-Based Authorization
 
@@ -114,19 +114,19 @@ Keep the original `admin` account unchanged.
 
 Select `User1` and assign the `admin-role`.
 
-![User1 Role Assignment](screenshots/Screenshot%20(4449).png)
+![User1 Role Assignment](screenshots/user1-role.png)
 
 ### 6.2 Assign read-only to User2
 
 Select `User2` and assign the `read-only` role.
 
-![User2 Role Assignment](screenshots/Screenshot%20(4450).png)
+![User2 Role Assignment](screenshots/user2-role.png)
 
 ### 6.3 Role Assignment Overview
 
 The Assign Roles page displays the users and their assigned global roles.
 
-![Global Role Assignments](screenshots/Screenshot%20(4446).png)
+![Global Role Assignments](screenshots/role-assignments.png)
 
 **Expected Result:**
 
@@ -144,7 +144,7 @@ Log in using `User2`.
 
 The Jenkins dashboard is accessible, and the user can view the available jobs and build information.
 
-![User2 Jenkins Dashboard](screenshots/Screenshot%20(4448).png)
+![User2 Jenkins Dashboard](screenshots/user2-dashboard.png)
 
 ### 7.2 User1 — Administrator Access
 
