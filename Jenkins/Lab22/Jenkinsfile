@@ -1,0 +1,32 @@
+@Library('Lab22Shared') _
+
+pipeline {
+    agent {
+        label 'lab22-agent'
+    }
+
+    environment {
+        DOCKER_IMAGE = 'saratarek1/demoapp'
+        IMAGE_TAG = "${BUILD_NUMBER}"
+    }
+
+    stages {
+        stage('CI/CD Pipeline') {
+            steps {
+                script {
+                    buildApp()
+
+                    buildImage(
+                        env.DOCKER_IMAGE,
+                        env.IMAGE_TAG
+                    )
+
+                    deployOnK8s(
+                        env.DOCKER_IMAGE,
+                        env.IMAGE_TAG
+                    )
+                }
+            }
+        }
+    }
+}
