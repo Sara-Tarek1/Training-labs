@@ -1,5 +1,3 @@
-@Library('Lab22Shared') _
-
 pipeline {
     agent {
         label 'lab22-agent'
@@ -11,6 +9,29 @@ pipeline {
     }
 
     stages {
+        stage('Prepare Workspace') {
+            steps {
+                sh '''
+                    tar -xzf /var/jenkins_home/lab22-source.tar.gz -C "$WORKSPACE"
+                    ls -la
+                '''
+            }
+        }
+
+        stage('Load Shared Library') {
+            steps {
+                script {
+                    library(
+                        identifier: 'Lab22Shared@main',
+                        retriever: modernSCM([
+                            $class: 'GitSCMSource',
+                            remote: 'file:///var/jenkins_home/lab22-shared-library'
+                        ])
+                    )
+                }
+            }
+        }
+
         stage('CI/CD Pipeline') {
             steps {
                 script {
