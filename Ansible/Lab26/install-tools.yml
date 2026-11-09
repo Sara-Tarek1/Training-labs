@@ -1,0 +1,9 @@
+---
+- name: Configure tools using Ansible Roles
+  hosts: managed
+  become: yes
+
+  roles:
+    - docker
+    - kubectl
+    - jenkins
