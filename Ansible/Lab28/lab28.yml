@@ -1,0 +1,13 @@
+---
+- name: Configure Slave EC2
+  hosts: aws_ec2
+  become: true
+
+  tasks:
+    - name: Create verification file
+      ansible.builtin.copy:
+        dest: /home/ubuntu/lab28.txt
+        content: "Lab28 configured successfully by Ansible!\n"
+        owner: ubuntu
+        group: ubuntu
+        mode: "0644"
